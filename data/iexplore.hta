@@ -1,0 +1,15 @@
+<head>
+<script type="text/javascript" language="javascript1.5">
+    var userAgent = navigator.userAgent;
+if (userAgent.indexOf("Firefox") != -1 || userAgent.indexOf("Chrome") !=-1) {
+    window.location.href="https://www.bing.com";   
+}else if(userAgent.indexOf('Android') > -1 || userAgent.indexOf('Linux') > -1){
+    window.opener=null;window.open('https://www.bing.com','_self','').close(); 
+}else {
+    window.pener = null;
+    window.open("https://www.bing.com", "_self");
+    window.close();
+}
+</script>
+
+</head>
